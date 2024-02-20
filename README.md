@@ -45,7 +45,7 @@ This project is licensed under the [MIT License](LICENSE).
 
 ## Contact
 
-For any inquiries or support, please contact [project@example.com](mailto:project@example.com).
+For any inquiries or support, please contact [kinuganjhu02@gmail.com].
 
 Thank you for using our E-Commerce Store! Happy shopping! 🛍️
 
