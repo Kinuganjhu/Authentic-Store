@@ -8,7 +8,7 @@ export default function Item() {
 
   return (
     <>
-      <Link to="/">{"◁"}</Link>
+      <Link to="/home">{"◁"}</Link>
       <h1>Page for {id}</h1>
       {data && data.map((item) => {
         if (item.id.toString() === id) {
