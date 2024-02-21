@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
+
 import { auth} from './firebase';
 import { GoogleAuthProvider, signInWithPopup ,onAuthStateChanged} from 'firebase/auth';
 
@@ -11,7 +12,7 @@ export default function SignIn() {
     const unsubscribe = onAuthStateChanged(auth, (user) => {
       if (user) {
         // User is signed in, navigate to Home.js
-        navigate('/home');
+        navigate('/Home');
       }
     });
 
@@ -23,7 +24,7 @@ export default function SignIn() {
     signInWithPopup(auth, provider)
       .then((result) => {
         // Handle successful sign-in
-        alert('Sign-in successful!');
+  alert('Sign In successfully')
         navigate('/Home'); // Redirect to Home.js after sign-in
       })
       .catch((error) => {
@@ -33,10 +34,18 @@ export default function SignIn() {
   };
 
   return (
-    <>
-      <h1>Sign Up Page</h1>
+    <div className='App'>
+      <h1>Join Us Now</h1>
       {error && <p>{error}</p>}
-      <button onClick={handleSign}>Sign Up With Google</button>
-    </>
+      <p>Hello Welcome to our store</p>
+    <button className="sign" onClick={handleSign}>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 488 512" className="icon" width="20" height="20">
+    <path d="M488 261.8C488 403.3 391.1 504 248 504 110.8 504 0 393.2 0 256S110.8 8 248 8c66.8 0 123 24.5 166.3 64.9l-67.5 64.9C258.5 52.6 94.3 116.6 94.3 256c0 86.5 69.1 156.6 153.7 156.6 98.2 0 135-70.4 140.8-106.9H248v-85.3h236.1c2.3 12.7 3.9 24.9 3.9 41.4z"/>
+  </svg>
+  Continue With Google
+</button>
+
+
+    </div>
   );
 }

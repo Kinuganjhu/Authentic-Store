@@ -1,36 +1,26 @@
-*{
+* {
   margin: 12px;
-
 }
-img{
+
+img {
   max-width: 250px;
   height: 200px;
 }
-.div{
+
+.div {
   border-radius: 8px;
   border: 1px solid #ccc;
 }
-.signin-container {
-  text-align: center;
-  margin-top: 50px;
+
+.App {
+  
+  text-align: center; /* Moved this line inside the .App selector */
 }
 
-.error-message {
-  color: red;
-}
-
-.google-signin-button {
-  background-color: #ffffff;
-  border: 1px solid #dddddd;
-  border-radius: 5px;
-  padding: 10px 20px;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.google-signin-button img {
-  width: 20px;
-  margin-right: 10px;
+.sign {
+  font-size: 16px;
+  padding: 2px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  background-color: white;
 }
