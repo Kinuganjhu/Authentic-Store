@@ -24,3 +24,7 @@ img {
   border: 1px solid #ccc;
   background-color: white;
 }
+.danger{
+  color: red;
+  background-color: yellow;
+}

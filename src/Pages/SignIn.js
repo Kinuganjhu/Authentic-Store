@@ -36,7 +36,7 @@ export default function SignIn() {
   return (
     <div className='App'>
       <h1>Join Us Now</h1>
-      {error && <p>{error}</p>}
+      {error && <p className ='danger'>{error}</p>}
       <p>Hello Welcome to our store</p>
     <button className="sign" onClick={handleSign}>
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 488 512" className="icon" width="20" height="20">
